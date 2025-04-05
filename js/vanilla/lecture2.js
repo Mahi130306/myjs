@@ -176,3 +176,23 @@ else
 // 40-49 = C
 // 33-39 = F+
 // 0-32 = F
+let marks = prompt("Enter your marks:"); // prompt user for input
+console.log(marks, " is the enterd marks");
+if (marks >= 90 && marks <= 100) {
+    console.log("A+");}
+else if (marks >= 80 && marks <= 89) {
+    console.log("A");}
+else if (marks >= 70 && marks <= 79) {
+    console.log("B+");}
+else if (marks >= 60 && marks <= 69) {
+    console.log("B");}
+else if (marks >= 50 && marks <= 59) {
+    console.log("C+");}
+else if (marks >= 40 && marks <= 49) {
+    console.log("C");}
+else if (marks >= 33 && marks <= 39) {
+    console.log("F+");}
+else if (marks >= 0 && marks <= 32) {
+    console.log("F");}
+else {
+    console.log("Invalid marks 0-100");} // invalid marks
