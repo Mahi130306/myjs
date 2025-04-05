@@ -53,4 +53,31 @@ arr2.forEach(function(fruit) {
     console.log(fruit);
 });
 
- 
+// practice question
+// 1. print all even numbers from 0 to 100
+for (let num=0; num<=10; num++){
+    if (num%2==0){
+        console.log(num);
+    }
+    else{
+        continue;
+    }
+}
+// 2. create a game where you start with any random game number.Ask the user to keep guessing the game number until the user enters correct value.
+let gnum = 25;
+let unum = (prompt("Guess the number"));
+
+while (unum != gnum) {
+    if (unum < gnum) {
+        console.log("Guess higher number");
+    } else if (unum > gnum) {
+        console.log("Guess lower number");
+    }
+    unum = (prompt("Guess the number"));
+}
+
+console.log("YAY!... you guessed the number"+ unum);
+
+
+// strings
+console.log("strings");
