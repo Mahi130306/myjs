@@ -196,3 +196,4 @@ else if (marks >= 0 && marks <= 32) {
     console.log("F");}
 else {
     console.log("Invalid marks 0-100");} // invalid marks
+// console.log("Bye, Earth!");
