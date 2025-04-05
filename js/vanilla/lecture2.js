@@ -157,3 +157,22 @@ switch (day) {
         console.log("Invalid day");
 }
 
+//practice question
+// get user to input a number using prompt ("enter a number:"). Check if the number is a multiple of 5 or not. 
+alert("hello")// one-time popup message
+let num = prompt("Enter a number: to check if it is a multiple of 5"); // prompt user for input
+console.log(num, "num"); 
+if (num%5 == 0)
+    console.log("The number is a multiple of 5.") 
+else 
+    console.log("The number is not a multiple of 5.");
+
+// write a code which can give grades to student according to the marks obtained.
+// 90-100 = A+
+// 80-89 = A
+// 70-79 = B+
+// 60-69 = B
+// 50-59 = C+
+// 40-49 = C
+// 33-39 = F+
+// 0-32 = F
