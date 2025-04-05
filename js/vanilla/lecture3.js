@@ -6,6 +6,6 @@ console.log("loops and strings");
 
 // for loop
 console.log("for loop");
-for (let i = 0; i <= 115151; i++) {
+for (let i = 0; i <= 11; i++) {
     console.log("kkk");
 }
