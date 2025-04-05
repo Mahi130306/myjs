@@ -81,3 +81,4 @@ console.log("YAY!... you guessed the number"+ unum);
 
 // strings
 console.log("strings");
+let str = "hahahah";
