@@ -82,3 +82,17 @@ console.log("YAY!... you guessed the number"+ unum);
 // strings
 console.log("strings");
 let str = "hahahah";
+let str1 = 'hi! earth'; 
+// str.length gives the length of the string
+console.log(str[5]);
+console.log(str1[6]);
+// template literals
+let sentence = `this is a templet literal`;
+console.log(typeof sentence);
+ let obj2 = { item:"pen", price: 10};
+ console.log(`the price of ${obj2.item} is ${obj2.price}`);
+ console.log("the price of ",obj2.item," is ",obj2.price); // $ is a placeholder for the value of obj2.item and obj2.price
+ let output = `the price of ${obj2.item} is ${obj2.price}`;
+ console.log(output);
+
+ 
