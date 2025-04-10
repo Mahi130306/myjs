@@ -103,9 +103,34 @@ console.log(str3);
 
 // string methods
 console.log("string methods");
-let str4 = "Hi, earth!";
+let str4 = "hI, earth!";
 console.log(str4); // prints the string
 console.log("length of above string is",str4.length); // length of the string
 console.log("string in uppercase",str4.toUpperCase()); // converts the string to uppercase
 console.log("string in lowercase",str4.toLowerCase()); // converts the string to lowercase  
 console.log("string in titlecase",str4.charAt(0).toUpperCase() + str4.slice(1)); // converts the first character of the string to uppercase and the rest to lowercase
+console.log("string trimmed",str4.trim()); // removes the whitespace from both sides of the string
+console.log("string slice", str4.slice(0, 2)); // slices the string from index 0 to index 2
+console.log("string substring", str4.substring(3, 9)); // extracts the characters from index 0 to index 2
+console.log("string concatenation", str4.concat(" ", "hello", str1)); // concatenates the string with another string
+console.log("string replace", str4.replace("earth", "world")); // replaces the first occurrence of the string with another string
+console.log("string split", str4.split(",")); // splits the string into an array of strings
+console.log("string indexof", str4.indexOf("e")); // returns the index of the first occurrence of the string
+console.log("string lastindexof", str4.lastIndexOf("e")); // returns the index of the last occurrence of the string
+console.log("string includes", str4.includes("earth")); // returns true if the string contains the specified string
+console.log("string startswith", str4.startsWith("hI")); // returns true if the string starts with the specified string
+console.log("string endswith", str4.endsWith("!")); // returns true if the string ends with the specified string
+console.log("string charat", str4.charAt(0)); // returns the character at the specified index
+console.log("string charcodeat", str4.charCodeAt(0)); // returns the unicode of the character at the specified index
+console.log("string fromcharcode", String.fromCharCode(72)); // returns the character from the unicode
+
+
+// practice question
+// 1. promt the user to enter their fullname. generate a username for them based on them based o the input. strat username with @, followed by their full name and ending with the fullname length.
+// eg: user name="sachin", username="@sachin7"
+let fullname = prompt("Enter your full name without spaces");
+let username = `@${fullname}${fullname.length}`;
+console.log(username);
+
+console.log("Bye, Earth!");
+// console.log("Bye, Earth!");
