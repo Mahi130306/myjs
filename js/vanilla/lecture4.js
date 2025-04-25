@@ -93,3 +93,29 @@ console.log(arr6); // [1, 2, 3, 4, 5]
 let arr7 = arr6.slice(1, 4); // extract elements from index 1 to 4 (not including 4)
 console.log(arr7); // [2, 3, 4]
 
+// splice() - add or remove elements from the array
+let arr8 = [1, 2, 3, 4, 5]; // array of numbers
+console.log(arr8); // [1, 2, 3, 4, 5]
+arr8.splice(2, 1); // remove 1 element from index 2
+console.log(arr8); // [1, 2, 4, 5]
+arr8.splice(2, 0, 3); // add 3 at index 2
+console.log(arr8); // [1, 2, 3, 4, 5]
+arr8.splice(5, 0, 6, 7, 8); // add 6, 7, 8 at the end of the array
+console.log(arr8); // [1, 2, 3, 4, 5, 6, 7, 8]
+
+// practice question
+// 3. create an array to store companies-> "bloomberg", "google", "microsoft", "apple", "amazon"
+// a. remove the first company from the array. b.remove microsoft and add "tesla" in its place. c. add "nvidia" at the end of the array. 
+ console.log("Practice Questions");
+ console.log("3. create an array to store companies-> \"bloomberg\", \"google\", \"microsoft\", \"apple\", \"amazon\"");
+ console.log("a. remove the first company from the array. b.remove microsoft and add \"tesla\" in its place. c. add \"nvidia\" at the end of the array.");
+let mnc = ["bloomberg", "google", "microsoft", "apple", "amazon"]; // array of strings
+ console.log(mnc); // ["bloomberg", "google", "microsoft", "apple", "amazon"]
+    mnc.shift(); // remove the first company from the array
+    console.log("a:",mnc); // ["google", "microsoft", "apple", "amazon"]
+    mnc.splice(1,1,"tesla"); // remove microsoft and add "tesla" in its place
+    console.log("b:",mnc); // ["google", "tesla", "apple", "amazon"]
+    mnc.push("nvidia"); // add "nvidia" at the end of the array
+    console.log("c:",mnc); // ["google", "tesla", "apple", "amazon", "nvidia"]
+
+// console.log("bye, Earth!");
